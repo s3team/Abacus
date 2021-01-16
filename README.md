@@ -1,7 +1,7 @@
 # Abacus
 
-![Ubuntu](https://github.com/1c0e/Abacus/workflows/Ubuntu/badge.svg)
-![macOS](https://github.com/1c0e/Abacus/workflows/macOS/badge.svg)
+![Ubuntu](https://github.com/s3team/Abacus/workflows/Ubuntu/badge.svg)
+![macOS](https://github.com/s3team/Abacus/workflows/macOS/badge.svg)
 
 ***Please note that Abacus is not production ready and is still under active developement.***
 ## Introduction
@@ -145,11 +145,8 @@ Time taken by QIF: 0.787265 seconds
 
 ## Documentation
 If you are interested in the tool, you can find more details about Abacus in the documentation.
-* [More Examples](https://github.com/1c0e/Abacus/blob/master/docs/examples.md)
-* [Usage](https://github.com/1c0e/Abacus/blob/master/docs/usage.md)
-* [Reproduce the Result](https://github.com/1c0e/Abacus/blob/master/docs/result.md)
-* [Descritption](https://github.com/1c0e/Abacus/blob/master/docs/description.md)
+* [More Examples](https://github.com/s3team/Abacus/blob/master/docs/examples.md)
+* [Usage](https://github.com/s3team/Abacus/blob/master/docs/usage.md)
+* [Reproduce the Result](https://github.com/s3team/Abacus/blob/master/docs/result.md)
+* [Descritption](https://github.com/s3team/Abacus/blob/master/docs/description.md)
 
-## Contributing
-The paper is still under review for a double-blinded conferecne. At the present, we do not accept any pull requests.
-However, feature requests are welcome.
