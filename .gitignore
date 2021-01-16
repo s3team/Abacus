@@ -1,32 +1,96 @@
-# Prerequisites
-*.d
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+build/
+.idea/
+cmake-build-debug/
+cmake-build-release/
+json/
+disassembler/rc4
+disassembler/target/
+cmake-build-relwithdebinfo/
+venv/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+*.user
+.vscode/
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
 *.obj
-
-# Precompiled Headers
-*.gch
+*.iobj
 *.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Execution Traces
+*trace.txt
+!CMakeLists.txt
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
+# Latex
+papers/*/main.pdf
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
 *.out
-*.app
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Disassmebler
+target/
+
+BinaryDB/.DS_Store
+result.txt
+Function.txt
+Inst_data.txt
+Pintools/obj-ia32
+pin_kit

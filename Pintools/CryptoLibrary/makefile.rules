@@ -1,0 +1,75 @@
+##############################################################
+#
+# This file includes all the test targets as well as all the
+# non-default build rules and test recipes.
+#
+##############################################################
+
+
+##############################################################
+#
+# Test targets
+#
+##############################################################
+
+###### Place all generic definitions here ######
+
+# This defines tests which run tools of the same name.  This is simply for convenience to avoid
+# defining the test name twice (once in TOOL_ROOTS and again in TEST_ROOTS).
+# Tests defined here should not be defined in TOOL_ROOTS and TEST_ROOTS.
+TEST_TOOL_ROOTS := AES-bitslice AES-mbedTLS-2.15.1 AES-mbedTLS-2.5 AES-openssl-0.9.7 AES-openssl-1.0.2f AES-openssl-1.0.2k AES-openssl-1.1.0f AES-openssl-1.1.1 DES-mbedtls-2.15.1 DES-mbedtls-2.5 DES-openssl-0.9.7 DES-openssl-1.0.2f DES-openssl-1.0.2k DES-openssl-1.1.0f DES-openssl-1.1.1 ECDSA-mbedTLS-2.15.1-nonce ECDSA-mbedTLS-2.5-nonce ECDSA-openssl-1.0.2f-nonce ECDSA-openssl-1.0.2k-nonce ECDSA-openssl-1.1.0f-nonce ECDSA-openssl-1.1.1-nonce RSA-mbedtls-2.5 RSA-mbedtls-2.15.1 RSA-openssl-0.9.7 RSA-openssl-1.0.2f RSA-openssl-1.0.2k RSA-openssl-1.1.0f RSA-openssl-1.1.1 RSA-openssl-1.1.1g poly1305-monocypher chacha20-monocypher
+
+
+# This defines the tests to be run that were not already defined in TEST_TOOL_ROOTS.
+TEST_ROOTS :=
+
+# This defines the tools which will be run during the the tests, and were not already defined in
+# TEST_TOOL_ROOTS.
+TOOL_ROOTS :=
+
+# This defines the static analysis tools which will be run during the the tests. They should not
+# be defined in TEST_TOOL_ROOTS. If a test with the same name exists, it should be defined in
+# TEST_ROOTS.
+# Note: Static analysis tools are in fact executables linked with the Pin Static Analysis Library.
+# This library provides a subset of the Pin APIs which allows the tool to perform static analysis
+# of an application or dll. Pin itself is not used when this tool runs.
+SA_TOOL_ROOTS :=
+
+# This defines all the applications that will be run during the tests.
+APP_ROOTS :=
+
+# This defines any additional object files that need to be compiled.
+OBJECT_ROOTS :=
+
+# This defines any additional dlls (shared objects), other than the pintools, that need to be compiled.
+DLL_ROOTS :=
+
+# This defines any static libraries (archives), that need to be built.
+LIB_ROOTS :=
+
+###### Define the sanity subset ######
+
+# This defines the list of tests that should run in sanity. It should include all the tests listed in
+# TEST_TOOL_ROOTS and TEST_ROOTS excluding only unstable tests.
+SANITY_SUBSET := $(TEST_TOOL_ROOTS) $(TEST_ROOTS)
+
+
+##############################################################
+#
+# Test recipes
+#
+##############################################################
+
+# This section contains recipes for tests other than the default.
+# See makefile.default.rules for the default test rules.
+# All tests in this section should adhere to the naming convention: <testname>.test
+
+
+##############################################################
+#
+# Build rules
+#
+##############################################################
+
+# This section contains the build rules for all binaries that have special build rules.
+# See makefile.default.rules for the default build rules.
