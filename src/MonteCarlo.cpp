@@ -487,6 +487,9 @@ void FastMonteCarlo::print_group_result(const std::string &result,
       }
     }
 
+#ifdef NDEBUG
+
+#else
     for (auto &con : constrains_group_addr) {
       if (std::get<0>(con[0]) == addr) {
         myfile << "Number of m_constrains: " << con.size();
@@ -497,6 +500,7 @@ void FastMonteCarlo::print_group_result(const std::string &result,
         }
       }
     }
+#endif
 
     myfile << "------------------------------------------------------------\n";
   }
