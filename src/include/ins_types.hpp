@@ -14,6 +14,8 @@
 
 namespace config_parameter {
 const static uint32_t DATA_GRANULARITY = 6;
+const static uint32_t MAX_TEST_TIMES = 150;
+const static uint32_t EACH_SAMPLE_TIMES = 1000;
 }
 
 namespace tana {

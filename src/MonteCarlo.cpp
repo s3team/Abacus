@@ -257,7 +257,7 @@ void FastMonteCarlo::run_addr_group() {
     std::vector<int> con_input_vector = MonteCarlo::getAllKeys(*it);
     uint64_t num_satisfied_for_group = 0;
     uint32_t dim = con_input_vector.size();
-    uint32_t sample_size = 5000;
+    uint32_t sample_size = config_parameter::EACH_SAMPLE_TIMES;
     uint32_t test_round = 0;
     uint32_t min_satisfied_cons = 10;
 
@@ -276,7 +276,7 @@ void FastMonteCarlo::run_addr_group() {
 
       ++test_round;
 
-      if (test_round > 150)
+      if (test_round > config_parameter::MAX_TEST_TIMES)
         break;
     }
 
