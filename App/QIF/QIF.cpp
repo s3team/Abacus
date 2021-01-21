@@ -187,7 +187,12 @@ int main(int argc, char *argv[]) {
               << static_cast<double>(se_duration.count()) / 1000000
               << " seconds" << endl;
 
-  result_file << "Time taken by QIF: "
+  result_file << "Time taken by MC: "
+              << static_cast<double>(duration.count() - se_duration.count()) /
+                     1000000
+              << " seconds" << endl;
+
+  result_file << "Total Time: "
               << static_cast<double>(duration.count()) / 1000000 << " seconds"
               << endl;
 
