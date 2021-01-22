@@ -11,7 +11,7 @@
 #include <fstream>
 #include "pin.H"
 
-using std;
+using namespace std;
 using std::ofstream;
 
 
