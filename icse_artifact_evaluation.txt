@@ -14,7 +14,7 @@ git
 
 STATUS:
 We apply for Reusable and Available Badges
-a. Abacus is the implementation of paper 63. The paper has been accepted 
+a. Abacus is the implementation of # paper 63. The paper has been accepted 
 to ICSE 2021. It is publicly available on Github.
 b. We also provide the scripts to generate the results in the paper.
 c. We prepare a dockerfile to simplify the installation process.
@@ -27,12 +27,17 @@ LICENSE:
 Apache License 2.0
 
 INSTALL:
-1. Build the artifact
+1. Download and build the artifact
 Abacus can be built within a docker, simply run the following command
 ~~~~{.sh}
 $ git clone https://github.com/s3team/Abacus.git
 $ cd Abacus
 $ ./docker.sh
+~~~~
+
+After you build the docker image and enter the container, run the command
+to build Abacus.
+~~~~{.sh}
 $ ./build.sh
 ~~~~
 
@@ -57,8 +62,8 @@ int main() {
 #### Build the example
 Abacus works directly on the machine instruction. Here we build it into 
 a 32-bit ELF executable. Note while Abacus can work on stripped binaries 
-without the source code. However, in the example, 
-We use debug information to get a more clear result.
+without the source code. However, in the example, we use debug information 
+to get a more clear result.
 ~~~~{.sh}
 $ cd examples
 $ gcc -m32 -g example1.c
