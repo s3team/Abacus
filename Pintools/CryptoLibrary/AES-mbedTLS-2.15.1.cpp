@@ -169,7 +169,7 @@ int main(int argc, char *argv[]) {
     if (PIN_Init(argc, argv)) {
         return Usage();
     }
-    function_name = "mbedtls_aes_setkey_dec";
+    function_name = "mbedtls_aes_setkey_enc";
 
 
     fp = fopen("Inst_data.txt", "w");
