@@ -73,7 +73,10 @@ $ gcc -m32 -g example1.c
 We use the pin tool to collect the execution trace. The tool can automatically 
 collect the trace and other necessary runtime information.
 ~~~~{.sh}
-$ pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./examples/a.out 
+$ cd /abacus/Pintools
+$ make PIN_ROOT=/abacus/Intel-Pin-Archive/ TARGET=ia32
+$ cd /abacus
+$ /abacus/Intel-Pin-Archive/pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./examples/a.out 
 ~~~~
 You will get two files `Function.txt` and `Inst_data.txt`, which are 
 the inputs of the Abacus.
@@ -81,10 +84,8 @@ the inputs of the Abacus.
 #### Quantify the leakage 
 To run Abacus on the execution trace and get the analysis result.
 ~~~~{.sh}
-$ ./build/App/QIF/QIF ./Inst_data.txt -f Function.txt -d 
-$ ./examples/a.out -o result.txt
+$ ./build/App/QIF/QIF ./Inst_data.txt -f Function.txt -d ./examples/a.out -o result.txt
 ~~~~
-
 
 3. Reproduce the result in the paper
 The results (Table II) in the evaluation section can be verified by 
