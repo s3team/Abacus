@@ -19,26 +19,12 @@ give an estimation of the amount of the leaked information for each leakage site
 -  pkg-config
 -  gcc-7
 
-Abacus is consisted of two components:
--  A Pin tool
--  The offline executors
-#### PinTool
-The Pintool is located in the `pintool` folder:
+**Docker Build (Recommended)**:
 ~~~~{.sh}
-$ cd pintool
-$ make TAGERT=ia32 PIN_ROOT=<path to Pin kit>
-~~~~
-
-To learn more about Intel Pin, please refer <https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool>
-
-You will get an `.so` library for each pin tool.
-
-#### The Offline Executors
-~~~~{.sh}
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make all
+git clone https://github.com/s3team/Abacus.git
+cd Abacus
+./docker.sh
+./build.sh
 ~~~~
 
 ## A Hello World Example
