@@ -16,6 +16,6 @@ make -j4
 cp ./App/QIF/QIF ../QIF-new
 
 cd /abacus/Pintools/CryptoLibrary 
-make TAGET=ia32 PIN_ROOT=/abacus/Intel-Pin-Archive -j4
+make TARGET=ia32 PIN_ROOT=/abacus/Intel-Pin-Archive -j4
 cd /abacus
 
