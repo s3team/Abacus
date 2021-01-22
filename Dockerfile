@@ -29,7 +29,11 @@ libcurl4-openssl-dev \
 curl \
 gcc \
 cmake \
-pkg-config
+pkg-config \
+gcc-multilib \ 
+g++-multilib \
+zip
 
+RUN wget https://github.com/openssl/openssl/archive/OpenSSL_1_1_1h.zip; unzip OpenSSL_1_1_1h.zip;  cd openssl-OpenSSL_1_1_1h; setarch i386 ./config -m32; make -j4; make install
 
 
