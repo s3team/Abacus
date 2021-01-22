@@ -67,9 +67,10 @@ int main() {
 ```
 
 #### Build the example
-Abacus works directly on the machine instruction. Here we build it into a 32-bit ELF exectuable.
-Note while Abacus can work on stripped bianries without the source code. However, in the example, 
-we use debug informmation to get a more clear result.
+Abacus works directly on the machine instruction. Here we build it into a 32-bit ELF executable.
+Note while Abacus can work on stripped binaries without the source code. However, in the example, 
+We use debug information to get a more clear result.
+
 ~~~~{.sh}
 $ cd examples
 $ gcc -m32 -g example1.c
