@@ -12,23 +12,21 @@ You can reproduce the result in the following steps.
 
 We use an example to illustrace the process.
 
-## AES mbedTLS 2.15.1
+## Build
 
-### Build the pin tool
 
 ~~~{.sh}
-cd Pintools/CryptoLibrary
-make PIN_ROOT=<PATH TO PIN KIT> TARGET=ia32
+git clone https://github.com/s3team/Abacus.git
+cd Abacus
+./docker.sh
+./build.sh
 ~~~
 
-### Collect the execution trace
+It can automatically build Abacus and Pin Tools.
 
+## Run Experiments
+We use AES in mbedTLS 2.5 as an example to illustrate the steps.
 ~~~{.sh}
-pin -t Pintools/CryptoLibrary/obj-ia32/AES-mbedTLS-2.15.1.so -- benchmarks/AES-mbedTLS-2.15.1/aes_128_cbc
-~~~
-
-### Run the offline executor
-
-~~~{.sh}
-QIF ./Inst_data.txt -f Function.txt -d benchmarks/AES-mbedTLS-2.15.1/aes_128_cbc -o result.txt
+cd /abacus/script/AES_MBEDTLS_2.5
+./start.sh
 ~~~
