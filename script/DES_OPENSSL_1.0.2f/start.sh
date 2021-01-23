@@ -16,7 +16,7 @@ if [ $cur_dir != "script" ]; then
     if [[ $DEBUG = true ]]; then
         echo "Skiped"
     else
-        /abacus/QIF-new /abacus/script/$dir_str/Inst_data.txt -o ${dir_str,,}.txt
+        /abacus/QIF-old /abacus/script/$dir_str/Inst_data.txt -o ${dir_str,,}.txt
     fi
 else
     for i in $(find -type d); do
