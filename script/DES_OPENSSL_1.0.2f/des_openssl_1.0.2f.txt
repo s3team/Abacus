@@ -2,32 +2,32 @@ Total Constrains: 6
 Control Transfer: 0
 Data Access: 6
 START:
-Address: 8048da3 Leaked:5.5 bits Type: DA  Num of Satisfied: 22 Total Sampling Numbers: 1000
-Address: 8048daa Leaked:6.9 bits Type: DA  Num of Satisfied: 17 Total Sampling Numbers: 2000
-Address: 8048db3 Leaked:8.4 bits Type: DA  Num of Satisfied: 12 Total Sampling Numbers: 4000
-Address: 8048de0 Leaked:5.1 bits Type: DA  Num of Satisfied: 30 Total Sampling Numbers: 1000
-Address: 8048df0 Leaked:3.1 bits Type: DA  Num of Satisfied: 115 Total Sampling Numbers: 1000
-Address: 8048dfa Leaked:1.9 bits Type: DA  Num of Satisfied: 260 Total Sampling Numbers: 1000
+Address: 8048da3 Leaked:6.0 bits Type: DA  Num of Satisfied: 16 Total Sampling Numbers: 1000
+Address: 8048daa Leaked:5.7 bits Type: DA  Num of Satisfied: 19 Total Sampling Numbers: 1000
+Address: 8048db3 Leaked:8.1 bits Type: DA  Num of Satisfied: 11 Total Sampling Numbers: 3000
+Address: 8048de0 Leaked:5.6 bits Type: DA  Num of Satisfied: 20 Total Sampling Numbers: 1000
+Address: 8048df0 Leaked:1.8 bits Type: DA  Num of Satisfied: 281 Total Sampling Numbers: 1000
+Address: 8048dfa Leaked:2.2 bits Type: DA  Num of Satisfied: 224 Total Sampling Numbers: 1000
 DETAILS:
 ------------------------------------------------------------
-Address: 8048da3 Leaked:5.5 bits Type: DA  Num of Satisfied: 22 Total Sampling Numbers: 1000
+Address: 8048da3 Leaked:6.0 bits Type: DA  Num of Satisfied: 16 Total Sampling Numbers: 1000
 ------------------------------------------------------------
 ------------------------------------------------------------
-Address: 8048daa Leaked:6.9 bits Type: DA  Num of Satisfied: 17 Total Sampling Numbers: 2000
+Address: 8048daa Leaked:5.7 bits Type: DA  Num of Satisfied: 19 Total Sampling Numbers: 1000
 ------------------------------------------------------------
 ------------------------------------------------------------
-Address: 8048db3 Leaked:8.4 bits Type: DA  Num of Satisfied: 12 Total Sampling Numbers: 4000
+Address: 8048db3 Leaked:8.1 bits Type: DA  Num of Satisfied: 11 Total Sampling Numbers: 3000
 ------------------------------------------------------------
 ------------------------------------------------------------
-Address: 8048de0 Leaked:5.1 bits Type: DA  Num of Satisfied: 30 Total Sampling Numbers: 1000
+Address: 8048de0 Leaked:5.6 bits Type: DA  Num of Satisfied: 20 Total Sampling Numbers: 1000
 ------------------------------------------------------------
 ------------------------------------------------------------
-Address: 8048df0 Leaked:3.1 bits Type: DA  Num of Satisfied: 115 Total Sampling Numbers: 1000
+Address: 8048df0 Leaked:1.8 bits Type: DA  Num of Satisfied: 281 Total Sampling Numbers: 1000
 ------------------------------------------------------------
 ------------------------------------------------------------
-Address: 8048dfa Leaked:1.9 bits Type: DA  Num of Satisfied: 260 Total Sampling Numbers: 1000
+Address: 8048dfa Leaked:2.2 bits Type: DA  Num of Satisfied: 224 Total Sampling Numbers: 1000
 ------------------------------------------------------------
 Total Instructions:: 2772
-Time taken by SE: 0.251868 seconds
-Time taken by MC: 5.67078 seconds
-Total Time: 5.92265 seconds
+Time taken by SE: 0.249352 seconds
+Time taken by MC: 4.99135 seconds
+Total Time: 5.24071 seconds
