@@ -94,6 +94,11 @@ Inst_data.txt
 Pintools/obj-ia32
 Pintools/CryptoLibrary/obj-ia32
 pin_kit
+Abacus/
+Intel-Pin-Archive/
+QIF-new
+QIF-old
+
 core
 script/*/*.txt
 script/*/*_key
