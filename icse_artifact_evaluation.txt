@@ -1,18 +1,19 @@
 ICSE 2021 Artifact Evaluation For Paper #63 Abacus: Precise Side-Channel Analysis
 
-Abacus is an address-based side-channel vulnerability detection tool. 
-Different from previous tools, it can also give an estimation of the 
-amount of the leaked information for each leakage site.
+Abacus is a precise side-channel analysis and vulnerability detection
+tool.  Different from previous tools, it can also give an estimation
+of the amount of the leaked information for each leakage site.
 
 REQUIREMENTS:
+
 Supported OS: Ubuntu 18.04
-RAM: 32 GB (If you want to run experiments concurrently, please update 
-the size of RAM accordingly. Otherwise the program may be terminated by 
-the system.)  
+RAM: 32 GB (If you want to run experiments concurrently, update the size of RAM
+     accordingly. Otherwise the program may be terminated by the system.)  
 docker
 git
 
 STATUS:
+
 We apply for Reusable and Available Badges
 a. Abacus is the implementation of # paper 63. The paper has been accepted 
 to ICSE 2021. It is publicly available on Github.
@@ -24,9 +25,11 @@ machine with multiple cores, you can finish all the experiments in 2-3 days.
 e. You can access the latest version at https://github.com/s3team/Abacus
 
 LICENSE:
+
 Apache License 2.0
 
 INSTALL:
+
 1. Download and build the artifact
 Abacus can be built within a docker, simply run the following command
 ~~~~{.sh}
@@ -35,17 +38,17 @@ $ cd Abacus
 $ ./docker.sh
 ~~~~
 
-After you build the docker image and enter the container, run the command
-to build Abacus.
+After you build the docker image and enter the container, run the
+following command to build Abacus.
 ~~~~{.sh}
 $ ./build.sh
 ~~~~
 
 2. Run the hello-world example
 In order to test this function with Abacus, we need to tell Abacus 
-which variable is the secret data. We use the function `abacus_make_symbolic`. 
+which variables are the secret data. We use the function `abacus_make_symbolic`. 
 The function takes three arguments: the type of the symbol, the address of 
-the secret, and the length of the secret input. In the below example, 
+the secret, and the length of the secret input. In the example below, 
 the secret input is the variable `secret`, and its length is two bytes.
 
 ```C
@@ -61,7 +64,7 @@ int main() {
 
 2.1. Build the example
 Abacus works directly on the machine instruction. Here we build it into 
-a 32-bit ELF executable. Note while Abacus can work on stripped binaries 
+a 32-bit ELF executable. Note that while Abacus can work on stripped binaries 
 without the source code. However, in the example, we use debug information 
 to get a more clear result.
 ~~~~{.sh}
@@ -87,7 +90,7 @@ To run Abacus on the execution trace and get the analysis result.
 $ ./build/App/QIF/QIF ./Inst_data.txt -f Function.txt -d ./examples/a.out -o result.txt
 ~~~~
 
-3. Reproduce the result in the paper
+3. Reproduce the results in the paper
 The results (Table II in the accepted paper) in the evaluation section can be 
 verified by running the simple command after you build Abacus successfully in 
 the docker (step 1).
