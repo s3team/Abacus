@@ -88,8 +88,8 @@ $ ./build/App/QIF/QIF ./Inst_data.txt -f Function.txt -d ./examples/a.out -o res
 ~~~~
 
 3. Reproduce the result in the paper
-The results (Table II) in the evaluation section can be verified by 
-running the simple command after you build Abacus successfully in 
+The results (Table II in the accepted paper) in the evaluation section can be 
+verified by running the simple command after you build Abacus successfully in 
 the docker (step 1).
 
 We have prepared some scripts to test each crypto algorithm automatically.
