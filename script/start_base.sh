@@ -22,6 +22,8 @@ ver_str=$ver_str_ori
 
 bin_str=$(find /abacus/data/benchmarks/$alg_str-$lib_str-$ver_str/ -executable -type f)
 
+qif="/abacus/QIF-old"
+
 case $alg_str in
 # "AES")
 #     case $lib_str in
@@ -43,6 +45,7 @@ case $alg_str in
     #     ;;
 "ECDSA")
     ver_str=$ver_str-nonce
+    qif="/abacus/QIF-new"
     #     case $lib_str in
     #     "mbedTLS") fuc_str="mbedtls_ecdsa_write_signature" ;;
     #     "openssl") fuc_str="ECDSA_do_sign" ;;

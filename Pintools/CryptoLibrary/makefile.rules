@@ -17,7 +17,7 @@
 # This defines tests which run tools of the same name.  This is simply for convenience to avoid
 # defining the test name twice (once in TOOL_ROOTS and again in TEST_ROOTS).
 # Tests defined here should not be defined in TOOL_ROOTS and TEST_ROOTS.
-TEST_TOOL_ROOTS := AES-bitslice AES-mbedTLS-2.15.1 AES-mbedTLS-2.5 AES-openssl-0.9.7 AES-openssl-1.0.2f AES-openssl-1.0.2k AES-openssl-1.1.0f AES-openssl-1.1.1 DES-mbedtls-2.15.1 DES-mbedtls-2.5 DES-openssl-0.9.7 DES-openssl-1.0.2f DES-openssl-1.0.2k DES-openssl-1.1.0f DES-openssl-1.1.1 ECDSA-mbedTLS-2.15.1-nonce ECDSA-mbedTLS-2.5-nonce ECDSA-openssl-1.0.2f-nonce ECDSA-openssl-1.0.2k-nonce ECDSA-openssl-1.1.0f-nonce ECDSA-openssl-1.1.1-nonce ECDSA-openssl-1.1.1g-nonce RSA-mbedtls-2.5 RSA-mbedtls-2.15.1 RSA-openssl-0.9.7 RSA-openssl-1.0.2f RSA-openssl-1.0.2k RSA-openssl-1.1.0f RSA-openssl-1.1.1 RSA-openssl-1.1.1g poly1305-monocypher-3.0 chacha20-monocypher-3.0 ed25519-monocypher-3.0 argon2i-monocypher-3.0
+TEST_TOOL_ROOTS := AES-bitslice AES-mbedTLS-2.15 AES-mbedTLS-2.5 AES-openssl-0.9.7 AES-openssl-1.0.2f AES-openssl-1.0.2k AES-openssl-1.1.0f AES-openssl-1.1.1 DES-mbedTLS-2.15 DES-mbedTLS-2.5 DES-openssl-0.9.7 DES-openssl-1.0.2f DES-openssl-1.0.2k DES-openssl-1.1.0f DES-openssl-1.1.1 ECDSA-mbedTLS-2.15-nonce ECDSA-mbedTLS-2.5-nonce ECDSA-openssl-1.0.2f-nonce ECDSA-openssl-1.0.2k-nonce ECDSA-openssl-1.1.0f-nonce ECDSA-openssl-1.1.1-nonce ECDSA-openssl-1.1.1g-nonce RSA-mbedTLS-2.5 RSA-mbedTLS-2.15 RSA-openssl-0.9.7 RSA-openssl-1.0.2f RSA-openssl-1.0.2k RSA-openssl-1.1.0f RSA-openssl-1.1.1 RSA-openssl-1.1.1g poly1305-monocypher-3.0 chacha20-monocypher-3.0 ed25519-monocypher-3.0 argon2i-monocypher-3.0
 
 
 # This defines the tests to be run that were not already defined in TEST_TOOL_ROOTS.
