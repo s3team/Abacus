@@ -114,4 +114,5 @@ Tested Algorithms:
 * Monocypher: Chacha20 Poly1305 Argon2i Ed25519
 
 Abacus uses a dynamic method to identify the vulnerabilities 
-automatically. 
+automatically. It is possible the running time and the reported
+leakages are slightly different.
