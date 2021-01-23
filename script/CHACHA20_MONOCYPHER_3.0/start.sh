@@ -16,7 +16,7 @@ if [ $cur_dir != "script" ]; then
     if [[ $DEBUG = true ]]; then
         echo "Skiped"
     else
-        /abacus/QIF-old /abacus/script/$dir_str/Inst_data.txt -o ${dir_str,,}.txt
+        $qif /abacus/script/$dir_str/Inst_data.txt -o ${dir_str,,}.txt
     fi
 else
     for i in $(find -type d); do
@@ -24,10 +24,10 @@ else
             # if [ ! -x $i/start.sh ]; then
             cp /abacus/script/start.sh $i/
             # fi
-            cd $i
-            echo $i
-            source start.sh
-            cd ..
+            # cd $i
+            # echo $i
+            # source start.sh
+            # cd ..
         fi
     done
 fi

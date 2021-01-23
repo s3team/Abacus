@@ -24,10 +24,10 @@ else
             # if [ ! -x $i/start.sh ]; then
             cp /abacus/script/start.sh $i/
             # fi
-            cd $i
-            echo $i
-            source start.sh
-            cd ..
+            # cd $i
+            # echo $i
+            # source start.sh
+            # cd ..
         fi
     done
 fi
