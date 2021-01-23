@@ -3,7 +3,8 @@
 ![Ubuntu](https://github.com/s3team/Abacus/workflows/Ubuntu/badge.svg)
 ![macOS](https://github.com/s3team/Abacus/workflows/macOS/badge.svg)
 
-***Please note that Abacus is not production ready and is still under active developement.***
+***Please note that Abacus is not production ready and is still under active development.***
+
 ## Introduction
 
 Abacus is an address-based side-channel vulnerabilities detection tool. Different from previous tools, it can also 
@@ -11,10 +12,10 @@ give an estimation of the amount of the leaked information for each leakage site
 
 ## Getting Started
 
-### Build Intructions
-**Supported OS**: Linux 18.04, Ubuntu 20.04
+### Build Instructions
+**Supported OS**: Ubuntu 18.04, Ubuntu 20.04
 
-**Prerequistes**: 
+**Prerequisites**: 
 -  cmake 3.12 or newer
 -  pkg-config
 -  gcc-7
@@ -52,7 +53,7 @@ The source code of the example is located at `examples\example1.c`.
 #### Marking secret data as symbolic
 In order to test this function with Abacus, we need to tell Abacus which variable is the secret
 data. We use the function `abacus_make_symbolic`. The function takes three arguments: the type of
-the symbolic, the address of the secrest, and the length of the secret input. In the below example,
+the symbol, the address of the secret, and the length of the secret input. In the below example,
 the secret input is the variable `secret`, and its length is two bytes.
 
 ```C
@@ -82,7 +83,7 @@ necessary runtime information.
 ~~~~{.sh}
 $ pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./examples/a.out 
 ~~~~
-You will get two files `Function.txt` and `Inst_data.txt`, which are the inputs of the Abacus.
+You will get two files `Function.txt` and `Inst_data.txt`, which are the inputs of Abacus.
 
 #### Quantify the leakage 
 To run Abacus on the execution trace and get the analysis result.
@@ -138,5 +139,4 @@ If you are interested in the tool, you can find more details about Abacus in the
 * [Descritption](https://github.com/s3team/Abacus/blob/master/docs/description.md)
 
 ## Publications
-Abacus: Precise Side-Channel Analysis, by Qinkun Bao*, Zihao Wang*, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineering (ICSE 2021). (accepted)
-
+Abacus: Precise Side-Channel Analysis, by Qinkun Bao, Zihao Wang, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineering (ICSE 2021). (accepted)

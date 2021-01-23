@@ -8,11 +8,11 @@ that can quantify each leakage site and identify those severe leakages.
 We quantify the amount of each leakage site based on the search space.
 For example, if the length of the key is 128 bits, an attacker needs to
 brute force 2^128 possible keys without any domain knowledge. However, 
-supposed an attacker observe some infomration to reduce the serach space
+supposed an attacker observe some information to reduce the serach space
 to 2^120. Then we can conclude 8 bits of the information are leaked. 
 
 ## Binary Analysis
-Abacus works on the machine intruction level. So it can indentify 
+Abacus works on the machine instruction level. So it can identify 
 side-channel leakages introduced by compilers.
 
 ## Tested Libraries

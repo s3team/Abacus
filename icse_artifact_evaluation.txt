@@ -1,0 +1,121 @@
+ICSE 2021 Artifact Evaluation For Paper #63 Abacus: Precise Side-Channel Analysis
+
+Abacus is a precise side-channel analysis and vulnerability detection
+tool.  Different from previous tools, it can also give an estimation
+of the amount of the leaked information for each leakage site.
+
+REQUIREMENTS:
+
+Supported OS: Ubuntu 18.04
+RAM: 32 GB (If you want to run experiments concurrently, update the size of RAM
+     accordingly. Otherwise the program may be terminated by the system.)  
+docker
+git
+
+STATUS:
+
+We apply for Reusable and Available Badges
+a. Abacus is the implementation of # paper 63. The paper has been accepted 
+to ICSE 2021. It is publicly available on Github.
+b. We also provide the scripts to generate the results in the paper.
+c. We prepare a dockerfile to simplify the installation process.
+d. It takes 10 minutes to run a hello world example. But it can take 
+several days to finish all the experiments in the paper. If you have a 
+machine with multiple cores, you can finish all the experiments in 2-3 days.
+e. You can access the latest version at https://github.com/s3team/Abacus
+
+LICENSE:
+
+Apache License 2.0
+
+INSTALL:
+
+1. Download and build the artifact
+Abacus can be built within a docker, simply run the following command
+~~~~{.sh}
+$ git clone https://github.com/s3team/Abacus.git
+$ cd Abacus
+$ ./docker.sh
+~~~~
+
+After you build the docker image and enter the container, run the
+following command to build Abacus.
+~~~~{.sh}
+$ ./build.sh
+~~~~
+
+2. Run the hello-world example
+In order to test this function with Abacus, we need to tell Abacus 
+which variables are the secret data. We use the function `abacus_make_symbolic`. 
+The function takes three arguments: the type of the symbol, the address of 
+the secret, and the length of the secret input. In the example below, 
+the secret input is the variable `secret`, and its length is two bytes.
+
+```C
+int main() {
+  uint16_t secret = 6;
+  // uint8_t secret = 8;
+  char *type = "1";
+  abacus_make_symbolic(type, &secret, 2);   // The length of the key is two bytes
+  is_odd(secret);
+  return 0;
+}
+```
+
+2.1. Build the example
+Abacus works directly on the machine instruction. Here we build it into 
+a 32-bit ELF executable. Note that while Abacus can work on stripped binaries 
+without the source code. However, in the example, we use debug information 
+to get a more clear result.
+~~~~{.sh}
+$ cd examples
+$ gcc -m32 -g example1.c
+~~~~
+
+2.2. Collect the trace
+We use the pin tool to collect the execution trace. The tool can automatically 
+collect the trace and other necessary runtime information.
+~~~~{.sh}
+$ cd /abacus/Pintools
+$ make PIN_ROOT=/abacus/Intel-Pin-Archive/ TARGET=ia32
+$ cd /abacus
+$ /abacus/Intel-Pin-Archive/pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./examples/a.out 
+~~~~
+You will get two files `Function.txt` and `Inst_data.txt`, which are 
+the inputs of the Abacus.
+
+3.3. Quantify the leakage 
+To run Abacus on the execution trace and get the analysis result.
+~~~~{.sh}
+$ ./build/App/QIF/QIF ./Inst_data.txt -f Function.txt -d ./examples/a.out -o result.txt
+~~~~
+
+3. Reproduce the results in the paper
+The results (Table II in the accepted paper) in the evaluation section can be 
+verified by running the simple command after you build Abacus successfully in 
+the docker (step 1).
+
+We have prepared some scripts to test each crypto algorithm automatically.
+
+For example,if you want to test AES in mbedTLS 2.5, you can try the 
+following command.
+
+~~~~{.sh}
+$ cd /abacus/script/AES_MBEDTLS_2.5
+$ ./start.sh
+~~~~
+
+Tested Libraries:
+* OpenSSL: 0.9.7, 1.0.2f, 1.0.2k, 1.1.0f, 1.1.1, 1.1.1g
+* MbedTLS: 2.5, 2.15
+* Libgcrypt: 1.8.5
+* Monocypher: 3.0
+Tested Algorithms:
+* OpenSSL: AES DES RSA ECDSA 
+* MbedTLS: AES DES RSA ECDSA
+* Libgcrypt: RSA
+* Monocypher: Chacha20 Poly1305 Argon2i Ed25519
+
+Abacus uses a dynamic method to identify the vulnerabilities 
+automatically. It is possible the running time and the reported
+leakages are slightly different.

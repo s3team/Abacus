@@ -64,7 +64,7 @@ int main()
 ```
 
 We notice that function `mbedtls_des_setkey_enc` takes `key` as the second input argument. So we can use the
-function `RTN_InsertCall` to instrument the binary exectubale at the run-time and get the address. Also, the
+function `RTN_InsertCall` to instrument the binary executable at the run-time and get the address. Also, the
 length of `key` is known.
 
 ```C
