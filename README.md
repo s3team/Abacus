@@ -4,6 +4,7 @@
 ![macOS](https://github.com/s3team/Abacus/workflows/macOS/badge.svg)
 
 ***Please note that Abacus is not production ready and is still under active development.***
+
 ## Introduction
 
 Abacus is an address-based side-channel vulnerabilities detection tool. Different from previous tools, it can also 
@@ -138,5 +139,4 @@ If you are interested in the tool, you can find more details about Abacus in the
 * [Descritption](https://github.com/s3team/Abacus/blob/master/docs/description.md)
 
 ## Publications
-Abacus: Precise Side-Channel Analysis, by Qinkun Bao*, Zihao Wang*, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineering (ICSE 2021). (accepted)
-
+Abacus: Precise Side-Channel Analysis, by Qinkun Bao, Zihao Wang, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineering (ICSE 2021). (accepted)
