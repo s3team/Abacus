@@ -95,9 +95,9 @@ The results (Table II in the accepted paper) in the evaluation section can be
 verified by running the simple command after you build Abacus successfully in 
 the docker (step 1).
 
-We have prepared some scripts to test each crypto algorithm automatically.
+We have prepared scripts to test each crypto algorithm automatically.
 
-For example,if you want to test AES in mbedTLS 2.5, you can try the 
+For example, if you want to test AES in mbedTLS 2.5, you can try the 
 following command.
 
 ~~~~{.sh}
@@ -110,12 +110,51 @@ Tested Libraries:
 * MbedTLS: 2.5, 2.15
 * Libgcrypt: 1.8.5
 * Monocypher: 3.0
+
 Tested Algorithms:
 * OpenSSL: AES DES RSA ECDSA 
 * MbedTLS: AES DES RSA ECDSA
 * Libgcrypt: RSA
 * Monocypher: Chacha20 Poly1305 Argon2i Ed25519
 
-Abacus uses a dynamic method to identify the vulnerabilities 
-automatically. It is possible the running time and the reported
+Abacus uses a dynamic method to detect the vulnerabilities 
+automatically. It is possible that the running time and the reported
 leakages are slightly different.
+
+Scripts:
+/abacus/script
+|-- AES_MBEDTLS_2.15
+|-- AES_MBEDTLS_2.5
+|-- AES_OPENSSL_0.9.7
+|-- AES_OPENSSL_1.0.2f
+|-- AES_OPENSSL_1.0.2k
+|-- AES_OPENSSL_1.1.0f
+|-- AES_OPENSSL_1.1.1
+|-- ARGON2i_MONOCYPHER_3.0
+|-- CHACHA20_MONOCYPHER_3.0
+|-- DES_MBEDTLS_2.15
+|-- DES_MBEDTLS_2.5
+|-- DES_OPENSSL_0.9.7
+|-- DES_OPENSSL_1.0.2f
+|-- DES_OPENSSL_1.0.2k
+|-- DES_OPENSSL_1.1.0f
+|-- DES_OPENSSL_1.1.1
+|-- ECDSA_MBEDTLS_2.15
+|-- ECDSA_MBEDTLS_2.5
+|-- ECDSA_OPENSSL_1.0.2f
+|-- ECDSA_OPENSSL_1.0.2k
+|-- ECDSA_OPENSSL_1.1.0f
+|-- ECDSA_OPENSSL_1.1.1
+|-- ECDSA_OPENSSL_1.1.1g
+|-- Ed25519_MONOCYPHER_3.0
+|-- POLY1305_MONOCYPHER_3.0
+|-- RSA_MBEDTLS_2.15
+|-- RSA_MBEDTLS_2.5
+|-- RSA_OPENSSL_0.9.7
+|-- RSA_OPENSSL_1.0.2f
+|-- RSA_OPENSSL_1.0.2k
+|-- RSA_OPENSSL_1.1.0f
+|-- RSA_OPENSSL_1.1.1
+|-- RSA_OPENSSL_1.1.1g
+`-- RSA_libgcrypt_1.8.5
+
