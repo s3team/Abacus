@@ -56,7 +56,6 @@ venv/
 *trace.txt
 !CMakeLists.txt
 
-
 # Latex
 papers/*/main.pdf
 *.aux
@@ -94,3 +93,4 @@ Function.txt
 Inst_data.txt
 Pintools/obj-ia32
 pin_kit
+.history

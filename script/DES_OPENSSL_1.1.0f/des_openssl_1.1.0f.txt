@@ -1,0 +1,33 @@
+Total Constrains: 6
+Control Transfer: 0
+Data Access: 6
+START:
+Address: 8048f7b Leaked:5.1 bits Type: DA  Num of Satisfied: 30 Total Sampling Numbers: 1000
+Address: 8048f91 Leaked:4.7 bits Type: DA  Num of Satisfied: 38 Total Sampling Numbers: 1000
+Address: 8048f9d Leaked:6.4 bits Type: DA  Num of Satisfied: 12 Total Sampling Numbers: 1000
+Address: 8048fbb Leaked:5.3 bits Type: DA  Num of Satisfied: 25 Total Sampling Numbers: 1000
+Address: 8048fcc Leaked:2.0 bits Type: DA  Num of Satisfied: 243 Total Sampling Numbers: 1000
+Address: 8048fd6 Leaked:2.1 bits Type: DA  Num of Satisfied: 226 Total Sampling Numbers: 1000
+DETAILS:
+------------------------------------------------------------
+Address: 8048f7b Leaked:5.1 bits Type: DA  Num of Satisfied: 30 Total Sampling Numbers: 1000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: 8048f91 Leaked:4.7 bits Type: DA  Num of Satisfied: 38 Total Sampling Numbers: 1000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: 8048f9d Leaked:6.4 bits Type: DA  Num of Satisfied: 12 Total Sampling Numbers: 1000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: 8048fbb Leaked:5.3 bits Type: DA  Num of Satisfied: 25 Total Sampling Numbers: 1000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: 8048fcc Leaked:2.0 bits Type: DA  Num of Satisfied: 243 Total Sampling Numbers: 1000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: 8048fd6 Leaked:2.1 bits Type: DA  Num of Satisfied: 226 Total Sampling Numbers: 1000
+------------------------------------------------------------
+Total Instructions:: 4591
+Time taken by SE: 0.271983 seconds
+Time taken by MC: 5.37409 seconds
+Total Time: 5.64608 seconds
