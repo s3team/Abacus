@@ -105,7 +105,7 @@ Different from the hello world example, we use `O3` to turn on the compiler
 optimization. Because most software also uses the release build. 
 
 ### Run Abacus
-First, we collect the executation trace.
+First, we collect the execution trace.
 ```bash
 pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./examples/a.out 
 ```
@@ -155,7 +155,7 @@ void example1(uint8_t input) {
 }
 ```
 Abacus reports no leakage in the above function. The above function take 8 bits of the secret data. However, we
-notice the value `b` should aways equal to 0. So it is not a secret-dependent control-flow.
+notice the value `b` should always equal to 0. So it is not a secret-dependent control-flow.
 
 ### Example 2
 ```C

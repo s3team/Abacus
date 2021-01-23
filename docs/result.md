@@ -10,7 +10,7 @@ You can reproduce the result in the following steps.
 2. Collect the execution trace.
 3. Run the offline executor and get the result.
 
-We use an example to illustrace the process.
+We use an example to illustrate the process.
 
 ## Build
 
