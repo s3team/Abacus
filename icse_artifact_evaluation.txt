@@ -59,7 +59,7 @@ int main() {
 }
 ```
 
-#### Build the example
+2.1. Build the example
 Abacus works directly on the machine instruction. Here we build it into 
 a 32-bit ELF executable. Note while Abacus can work on stripped binaries 
 without the source code. However, in the example, we use debug information 
@@ -69,7 +69,7 @@ $ cd examples
 $ gcc -m32 -g example1.c
 ~~~~
 
-#### Collect the trace
+2.2. Collect the trace
 We use the pin tool to collect the execution trace. The tool can automatically 
 collect the trace and other necessary runtime information.
 ~~~~{.sh}
@@ -81,7 +81,7 @@ $ /abacus/Intel-Pin-Archive/pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./exam
 You will get two files `Function.txt` and `Inst_data.txt`, which are 
 the inputs of the Abacus.
 
-#### Quantify the leakage 
+3.3. Quantify the leakage 
 To run Abacus on the execution trace and get the analysis result.
 ~~~~{.sh}
 $ ./build/App/QIF/QIF ./Inst_data.txt -f Function.txt -d ./examples/a.out -o result.txt
@@ -101,3 +101,17 @@ following command.
 $ cd /abacus/script/AES_MBEDTLS_2.5
 $ ./start.sh
 ~~~~
+
+Tested Libraries:
+* OpenSSL: 0.9.7, 1.0.2f, 1.0.2k, 1.1.0f, 1.1.1, 1.1.1g
+* MbedTLS: 2.5, 2.15
+* Libgcrypt: 1.8.5
+* Monocypher: 3.0
+Tested Algorithms:
+* OpenSSL: AES DES RSA ECDSA 
+* MbedTLS: AES DES RSA ECDSA
+* Libgcrypt: RSA
+* Monocypher: Chacha20 Poly1305 Argon2i Ed25519
+
+Abacus uses a dynamic method to identify the vulnerabilities 
+automatically. 
