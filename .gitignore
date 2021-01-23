@@ -94,4 +94,9 @@ Inst_data.txt
 Pintools/obj-ia32
 Pintools/CryptoLibrary/obj-ia32
 pin_kit
+core
+script/*/*.txt
+script/*/*_key
+script/*/encrypted_file.bin
+
 .history
