@@ -1,0 +1,25 @@
+Total Constrains: 4
+Control Transfer: 4
+Data Access: 0
+START:
+Address: ed2e9b18 Leaked:15.2 bits Type: CF  Num of Satisfied: 4 Total Sampling Numbers: 151000
+Address: ed2e9b26 Leaked:16.2 bits Type: CF  Num of Satisfied: 2 Total Sampling Numbers: 151000
+Address: ed2e9b34 Leaked:15.2 bits Type: CF  Num of Satisfied: 4 Total Sampling Numbers: 151000
+Address: ed2e9b47 Leaked:15.6 bits Type: CF  Num of Satisfied: 3 Total Sampling Numbers: 151000
+DETAILS:
+------------------------------------------------------------
+Address: ed2e9b18 Leaked:15.2 bits Type: CF  Num of Satisfied: 4 Total Sampling Numbers: 151000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: ed2e9b26 Leaked:16.2 bits Type: CF  Num of Satisfied: 2 Total Sampling Numbers: 151000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: ed2e9b34 Leaked:15.2 bits Type: CF  Num of Satisfied: 4 Total Sampling Numbers: 151000
+------------------------------------------------------------
+------------------------------------------------------------
+Address: ed2e9b47 Leaked:15.6 bits Type: CF  Num of Satisfied: 3 Total Sampling Numbers: 151000
+------------------------------------------------------------
+Total Instructions:: 1214078
+Time taken by SE: 17.2248 seconds
+Time taken by MC: 10.3135 seconds
+Total Time: 27.5382 seconds

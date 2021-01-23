@@ -10,7 +10,7 @@ if [ $cur_dir != "script" ]; then
     source ../start_base.sh
 
     echo "Collecting Trace Files..."
-    /abacus/Intel-Pin-Archive/pin -t /abacus/Pintools/CryptoLibrary/obj-ia32/$alg_str-$lib_str-$ver_str.so -- $bin_str
+    /abacus/Intel-Pin-Archive/pin -t /abacus/Pintools/CryptoLibrary/obj-ia32/$alg_str-$lib_str-$ver_str.so -- $bin_str $fuc_str
 
     echo "Analyzing"
     if [[ $DEBUG = true ]]; then

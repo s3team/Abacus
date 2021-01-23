@@ -6,11 +6,13 @@ dir_arr=($(echo $dir_str | tr '_' ' '))
 alg_str=${dir_arr[0]}
 alg_str=${alg_str/Ed25519/ed25519}
 alg_str=${alg_str/POLY1305/poly1305}
+alg_str=${alg_str/ARGON2i/argon2i}
+alg_str=${alg_str/CHACHA20/chacha20}
 
 lib_str_upc=${dir_arr[1]}
 lib_str=${lib_str_upc/MBEDTLS/mbedTLS}
 lib_str=${lib_str/OPENSSL/openssl}
-lib_str=${lib_str/MONOCYPER/monocyper}
+lib_str=${lib_str/MONOCYPHER/monocypher}
 
 ver_str_ori=${dir_arr[2]}
 ver_str=$ver_str_ori
@@ -32,7 +34,7 @@ case $alg_str in
 #     esac
 #     ;;
 "ARGON2i") fuc_str="crypto_argon2i" ;;
-"CHACHA20") fuc_str= "crypto_chacha20" ;;
+"CHACHA20") fuc_str="crypto_chacha20" ;;
     # "DES")
     #     case $lib_str in
     #     "mbedTLS") fuc_str="mbedtls_des_crypt_ecb" ;;
