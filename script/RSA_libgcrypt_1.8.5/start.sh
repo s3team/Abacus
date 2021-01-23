@@ -13,7 +13,7 @@ if [ $cur_dir != "script" ]; then
     /abacus/Intel-Pin-Archive/pin -t /abacus/Pintools/CryptoLibrary/obj-ia32/$alg_str-$lib_str-$ver_str.so -- $bin_str
 
     echo "Analyzing"
-    /abacus/QIF-new /abacus/script/$dir_str/Inst_data.txt -o ${dir_str,,}.txt
+    /abacus/QIF-old /abacus/script/$dir_str/Inst_data.txt -o ${dir_str,,}.txt
 
 else
     for i in $(find -type d); do
