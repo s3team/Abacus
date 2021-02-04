@@ -22,10 +22,15 @@ give an estimation of the amount of the leaked information for each leakage site
 
 **Docker Build (Recommended)**:
 ~~~~{.sh}
-git clone https://github.com/s3team/Abacus.git
-cd Abacus
-./docker.sh
-./build.sh
+$ git clone https://github.com/s3team/Abacus.git
+$ cd Abacus
+$ ./docker.sh
+~~~~
+
+After you build the docker image and enter the container, run the
+following command to build Abacus.
+~~~~{.sh}
+$ ./build.sh
 ~~~~
 
 ## A Hello World Example
