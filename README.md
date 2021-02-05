@@ -138,10 +138,10 @@ Time taken by QIF: 0.787265 seconds
 
 ## Documentation
 If you are interested in the tool, you can find more details about Abacus in the documentation.
-* [More Examples](https://github.com/s3team/Abacus/blob/master/docs/examples.md)
-* [Usage](https://github.com/s3team/Abacus/blob/master/docs/usage.md)
-* [Reproduce the Result](https://github.com/s3team/Abacus/blob/master/docs/result.md)
-* [Descritption](https://github.com/s3team/Abacus/blob/master/docs/description.md)
+* [More Examples](https://github.com/s3team/Abacus/blob/main/docs/examples.md)
+* [Usage](https://github.com/s3team/Abacus/blob/main/docs/usage.md)
+* [Reproduce the Result](https://github.com/s3team/Abacus/blob/main/docs/result.md)
+* [Descritption](https://github.com/s3team/Abacus/blob/main/docs/description.md)
 
 ## Publications
 Abacus: Precise Side-Channel Analysis, by Qinkun Bao, Zihao Wang, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineering (ICSE 2021). (accepted)
