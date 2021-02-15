@@ -45,6 +45,8 @@ $ ./build.sh
 ~~~~
 
 2. Run the hello-world example
+***Ensure from here on that you are in the Docker Container***
+
 In order to test this function with Abacus, we need to tell Abacus 
 which variables are the secret data. We use the function `abacus_make_symbolic`. 
 The function takes three arguments: the type of the symbol, the address of 
