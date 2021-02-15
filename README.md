@@ -34,6 +34,8 @@ $ ./build.sh
 ~~~~
 
 ## A Hello World Example
+***Ensure from here on that you are in the Docker Container***
+
 In the hello word example, we will guide you through the main steps needed to test a simple function
 with Abacus.
 
