@@ -476,7 +476,7 @@ int main(int argc, char *argv[]) {
     if (PIN_Init(argc, argv)) {
         return Usage();
     }
-    function_name = KnobFunctionName.Value();
+    function_name = "crypto_argon2i";
 
     fp = fopen("Inst_data.txt", "w");
     RTN_FP.open("Function.txt");
