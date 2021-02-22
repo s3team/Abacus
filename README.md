@@ -2,6 +2,7 @@
 
 ![Ubuntu](https://github.com/s3team/Abacus/workflows/Ubuntu/badge.svg)
 ![macOS](https://github.com/s3team/Abacus/workflows/macOS/badge.svg)
+[![DOI](https://zenodo.org/badge/328747019.svg)](https://zenodo.org/badge/latestdoi/328747019)
 
 ***Please note that Abacus is not production ready and is still under active development.***
 
