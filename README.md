@@ -6,6 +6,8 @@
 
 ***Please note that Abacus is not production ready and is still under active development.***
 
+***Abacus passed the ICSE 2021 Aritifact Evaluation. We received a Reusable badge.***
+
 ## Introduction
 
 Abacus is an address-based side-channel vulnerabilities detection tool. Different from previous tools, it can also 
