@@ -8,7 +8,7 @@ that can quantify each leakage site and identify those severe leakages.
 We quantify the amount of each leakage site based on the search space.
 For example, if the length of the key is 128 bits, an attacker needs to
 brute force 2^128 possible keys without any domain knowledge. However, 
-suppose an attacker observes some information an can reduce the size of the serach space
+suppose an attacker observes some information an can reduce the size of the search space
 to 2^120. Then we can conclude 8 bits of the information are leaked. 
 
 ## Binary Analysis
