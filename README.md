@@ -91,7 +91,10 @@ $ gcc -m32 -g example1.c
 We use the pin tool to collect the execution trace. The tool can automatically collect the trace and other
 necessary runtime information.
 ~~~~{.sh}
-$ pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./examples/a.out 
+$ cd /abacus/Pintools
+$ make PIN_ROOT=/abacus/Intel-Pin-Archive/ TARGET=ia32
+$ cd /abacus
+$ /abacus/Intel-Pin-Archive/pin -t Pintools/obj-ia32/MyPinToolLinux.so -- ./examples/a.out 
 ~~~~
 You will get two files `Function.txt` and `Inst_data.txt`, which are the inputs of Abacus.
 
@@ -149,4 +152,6 @@ If you are interested in the tool, you can find more details about Abacus in the
 * [Descritption](https://github.com/s3team/Abacus/blob/main/docs/description.md)
 
 ## Publications
-Abacus: Precise Side-Channel Analysis, by Qinkun Bao, Zihao Wang, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineering (ICSE 2021). (accepted)
+Abacus: Precise Side-Channel Analysis, by Qinkun Bao, Zihao Wang, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineering. 
+
+Abacus: A Tool for Precise Side-channel Analysis, by Qinkun Bao, Zihao Wang, James Larus, and Dinghao Wu. In Proceedings of the 43rd International Conference on Software Engineeringa: Companion (Artifact). 
